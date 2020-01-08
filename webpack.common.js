@@ -50,6 +50,10 @@ module.exports = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[chunkhash:8].css',
+      chunkFilename: 'css/[id].[chunkhash:8].css',
+    }),
     new HTMLWebpackPlugin({
       inject: true,
       template: path.join(__dirname, 'public/index.html'),
