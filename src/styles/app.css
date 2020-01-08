@@ -1,0 +1,53 @@
+.app {
+  width: 60em;
+  margin: 0 auto;
+}
+
+.app .header {
+  margin: 16vw 0 2vw;
+  text-align: center;
+}
+
+.header .title {
+  color: #49c;
+  font-size: 48px;
+  margin-top: 48px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.app .content {
+  color: #c1c1c1;
+  text-align: center;
+}
+
+.content code {
+  padding: 2px;
+  border-radius: 3px;
+  background: #323232;
+  font-family: monospace;
+}
+
+.app svg {
+  width: 100px;
+  animation: rotate 8s linear infinite;
+}
+
+.app svg circle {
+  fill: #49c;
+}
+
+.app svg circle:first-child {
+  fill: none;
+  stroke: #49c;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
