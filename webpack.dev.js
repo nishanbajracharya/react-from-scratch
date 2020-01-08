@@ -9,9 +9,6 @@ module.exports = merge(config, {
   devServer: {
     contentBase: path.join(__dirname, 'public/'),
   },
-  output: {
-    filename: 'js/[name].[hash:8].js',
-  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
