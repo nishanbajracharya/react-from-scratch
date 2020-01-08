@@ -6,8 +6,12 @@ const config = require('./webpack.common');
 
 module.exports = merge(config, {
   mode: 'production',
-  plugins: [
-    new OptimizeCSSAssetsPlugin({}),
-    new CleanWebpackPlugin(),
-  ],
+  devtool: 'source-map',
+  plugins: [new OptimizeCSSAssetsPlugin({}), new CleanWebpackPlugin()],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      maxInitialRequests: Infinity,
+    },
+  },
 });
