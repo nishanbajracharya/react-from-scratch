@@ -1,0 +1,28 @@
+{
+  "name": "react-from-scratch",
+  "version": "1.0.0",
+  "description": "An attempt to build a working React starter code from scratch",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishanbajracharya/react-from-scratch.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "webpack"
+  ],
+  "author": "Nishan Bajracharya <nisbaj11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nishanbajracharya/react-from-scratch/issues"
+  },
+  "homepage": "https://github.com/nishanbajracharya/react-from-scratch#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
