@@ -2,11 +2,12 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   entry: {
     app: './src/index.js',
   },
   output: {
-    filename: 'js/[name].[chunkhash:8].js',
+    filename: 'js/[name].[hash:8].js',
     path: path.join(__dirname, 'build'),
   },
   module: {
